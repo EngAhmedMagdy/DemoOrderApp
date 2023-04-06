@@ -1,0 +1,17 @@
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\Bussiness\bin\Debug\net6.0\Bussiness.deps.json
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\Bussiness\bin\Debug\net6.0\Bussiness.dll
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\Bussiness\bin\Debug\net6.0\Bussiness.pdb
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\Bussiness\bin\Debug\net6.0\Domain.dll
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\Bussiness\bin\Debug\net6.0\Repository.dll
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\Bussiness\bin\Debug\net6.0\Repository.pdb
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\Bussiness\bin\Debug\net6.0\Domain.pdb
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\Bussiness\obj\Debug\net6.0\Bussiness.csproj.AssemblyReference.cache
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\Bussiness\obj\Debug\net6.0\Bussiness.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\Bussiness\obj\Debug\net6.0\Bussiness.AssemblyInfoInputs.cache
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\Bussiness\obj\Debug\net6.0\Bussiness.AssemblyInfo.cs
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\Bussiness\obj\Debug\net6.0\Bussiness.csproj.CoreCompileInputs.cache
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\Bussiness\obj\Debug\net6.0\Bussiness.csproj.CopyComplete
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\Bussiness\obj\Debug\net6.0\Bussiness.dll
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\Bussiness\obj\Debug\net6.0\refint\Bussiness.dll
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\Bussiness\obj\Debug\net6.0\Bussiness.pdb
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\Bussiness\obj\Debug\net6.0\ref\Bussiness.dll

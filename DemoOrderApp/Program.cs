@@ -1,10 +1,15 @@
-using DemoOrderApp.Repository;
+using Bussiness.Abstraction;
+using Bussiness.Implementation;
+using Repository.Abstraction;
+using Repository.Implementation;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 //builder.Services.AddScoped<OrderRepository, OrderRepository>();
+builder.Services.AddTransient<IOrderRepository, OrderRepository>();
+builder.Services.AddTransient<IOrderService, OrderService>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

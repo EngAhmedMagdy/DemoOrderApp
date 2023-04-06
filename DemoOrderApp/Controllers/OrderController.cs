@@ -1,33 +1,33 @@
-﻿using DemoOrderApp.Models;
-using DemoOrderApp.Repository;
+﻿using Bussiness.Abstraction;
+using Domain.Entites;
 using Microsoft.AspNetCore.Mvc;
 
 namespace DemoOrderApp.Controllers
 {
     public class OrderController : Controller
     {
-        OrderRepository orderRepository;
-        public OrderController()
+        private IOrderService orderService;
+        public OrderController(IOrderService orderService)
         {
-            orderRepository = new();
+            this.orderService = orderService;
         }
         [Route("App/Order/Main")]
         public IActionResult Index()
         {
-            
-            var _orders = orderRepository.GetListOfOrders();
-            return View(_orders);
+            return View();
         }
         [HttpGet]
+        [Route("App/Order/Edit/{id}")]
         public IActionResult Edit(int id)
         {
-            var order = orderRepository.GetOrderById(id);
-            return View(order);
+            ;
+            return View(orderService.GetOrder(id));
         }
         [HttpPost]
+        [Route("App/Order/Edit/{id}")]
         public IActionResult Edit(Order order)
         {
-            orderRepository.Edit(order);
+            orderService.AddPriceToTotal(order);
             return RedirectToAction("Index");
         }
     }

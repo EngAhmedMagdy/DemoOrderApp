@@ -1,7 +1,6 @@
 ﻿using DemoOrderApp.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Diagnostics;
-
 namespace DemoOrderApp.Controllers
 {
     public class HomeController : Controller
@@ -10,6 +9,7 @@ namespace DemoOrderApp.Controllers
 
         public HomeController(ILogger<HomeController> logger)
         {
+            
             _logger = logger;
         }
 

@@ -1,12 +1,22 @@
 ﻿using DemoOrderApp.Models;
+using Microsoft.Build.Execution;
 using static NuGet.Packaging.PackagingConstants;
 
 namespace DemoOrderApp.Repository
 {
-    public class OrderRepository
+    public class OrderRepository : IOrderRepository
     {
 
         List<Order> _orders;
+        private static OrderRepository _uniqeinstance;
+        public static OrderRepository getInstance()
+        {
+            if(_uniqeinstance == null)
+            {
+                _uniqeinstance = new();
+            }
+            return _uniqeinstance;
+        }
         public OrderRepository()
         {
 
@@ -40,6 +50,7 @@ namespace DemoOrderApp.Repository
             if(exist_order != null)
             {
                 exist_order.Date = order.Date;
+                exist_order.Name = order.Name;
             }
             return exist_order;
         }
