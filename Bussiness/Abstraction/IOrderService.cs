@@ -12,5 +12,6 @@ namespace Bussiness.Abstraction
         public int CalculateFee();
         public void AddPriceToTotal(Order order);
         public Order GetOrder(int id);
+        public List<Order> GetOrders();
     }
 }

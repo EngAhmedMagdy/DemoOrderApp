@@ -1,7 +1,10 @@
 using Bussiness.Abstraction;
 using Bussiness.Implementation;
+using Domain.Entites;
 using Repository.Abstraction;
 using Repository.Implementation;
+using Microsoft.EntityFrameworkCore;
+using DemoOrderApp.Models;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -10,6 +13,9 @@ builder.Services.AddControllersWithViews();
 //builder.Services.AddScoped<OrderRepository, OrderRepository>();
 builder.Services.AddTransient<IOrderRepository, OrderRepository>();
 builder.Services.AddTransient<IOrderService, OrderService>();
+builder.Services.AddDbContext<Context>(opt => opt.UseSqlServer
+(builder.Configuration.GetConnectionString("OrderDB")));
+   
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

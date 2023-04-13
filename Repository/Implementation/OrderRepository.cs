@@ -1,4 +1,5 @@
 ﻿using Domain.Entites;
+using Microsoft.EntityFrameworkCore;
 using Repository.Abstraction;
 using System;
 using System.Collections.Generic;
@@ -9,26 +10,22 @@ using System.Threading.Tasks;
 namespace Repository.Implementation
 {
     public class OrderRepository : IOrderRepository
-    { 
-        List<Order> _orders; //database reference (db context)
-        public OrderRepository()
+    {
+        private Context _dbContex;
+        public OrderRepository(Context dbContext)
         {
-            var cusotmer = new Customer(1, "ahmed", "add", "012");
-            _orders = new();
-            _orders.Add(new Order(1, DateTime.Now.ToString(), cusotmer));
-            _orders.Add(new Order(2, DateTime.Now.ToString(), cusotmer));
-            _orders.Add(new Order(3, DateTime.Now.ToString(), cusotmer));
-            _orders.Add(new Order(4, DateTime.Now.ToString(), cusotmer));
+            _dbContex = dbContext;
         }
         public void Add(Order order)
         {
-            _orders.Add(order);
+            _dbContex.Orders.Add(order);
+            _dbContex.SaveChanges(); // Saves all changes made in this context to the database 
         }
 
         public void DeleteOrderById(int id)
         {
             var item = GetOrderById(id);
-            _orders.Remove(item);
+            _dbContex.Orders.Remove(item);
         }
 
         public Order Edit(Order order)
@@ -44,12 +41,12 @@ namespace Repository.Implementation
 
         public List<Order> GetListOfOrders()
         {
-            return _orders;
+            return _dbContex.Orders.ToList();
         }
 
-        public Order GetOrderById(int id)
+        public Order? GetOrderById(int id)
         {
-            return _orders.Where(x => x.Id == id).First();
+            return _dbContex.Orders.Where(x => x.Id == id).FirstOrDefault();
         }
     }
 }
