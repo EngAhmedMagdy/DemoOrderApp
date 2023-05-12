@@ -4,6 +4,7 @@ using Repository.Abstraction;
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 
@@ -34,14 +35,13 @@ namespace Repository.Implementation
             if (exist_order != null)
             {
                 exist_order.Date = order.Date;
-                exist_order.Name = order.Name;
             }
             return exist_order;
         }
 
-        public List<Order> GetListOfOrders()
+        public List<Order> GetListOfOrders(int id)
         {
-            return _dbContex.Orders.ToList();
+            return _dbContex.Orders.Where(x=>x.CustomerId == id).ToList();
         }
 
         public Order? GetOrderById(int id)

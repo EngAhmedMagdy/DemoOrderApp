@@ -17,32 +17,40 @@ namespace Bussiness.Implementation
             _orderRepository = orderRepository;
         }
 
-        public void AddPriceToTotal(Order order)
+        public void Add(List<CartItem> items,int customerid)
         {
-            //bussiness login
-            //1.add order to database
-            //2.add price to total price of orders
-            order.CustomerId = 1;
-            order.Cost = 1;
-            order.Description = "asd";
-            order.Category = "cat1";
-            order.Name = "as";
-            _orderRepository.Add(order);
+            foreach(var item in items)
+            {
+                Order order = new Order()
+                {
+                    CustomerId = customerid,
+                    CartItemId = item.Id,
+                    Cost = item.Count * item.Item.Price,
+                    Date = DateTime.Now.ToString()
+                };
+                _orderRepository.Add(order);
+            }
+            
         }
 
-        public int CalculateFee()
+        public void DeleteOrderById(int id)
         {
-
-            return 100;
+            throw new NotImplementedException();
         }
 
-        public Order GetOrder(int id)
+        public Order Edit(Order order)
         {
-            return _orderRepository.GetOrderById(id);
+            throw new NotImplementedException();
         }
-        public List<Order> GetOrders()
+
+        public List<Order> GetListOfOrders(int id)
         {
-            return _orderRepository.GetListOfOrders();
+            return _orderRepository.GetListOfOrders(id);
+        }
+
+        public Order GetOrderById(int id)
+        {
+            throw new NotImplementedException();
         }
     }
 }

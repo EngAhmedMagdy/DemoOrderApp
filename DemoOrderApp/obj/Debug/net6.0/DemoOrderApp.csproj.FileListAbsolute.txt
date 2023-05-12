@@ -1,3 +1,11 @@
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\obj\Debug\net6.0\DemoOrderApp.csproj.AssemblyReference.cache
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\obj\Debug\net6.0\DemoOrderApp.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\obj\Debug\net6.0\DemoOrderApp.AssemblyInfoInputs.cache
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\obj\Debug\net6.0\DemoOrderApp.AssemblyInfo.cs
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\obj\Debug\net6.0\DemoOrderApp.csproj.CoreCompileInputs.cache
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\obj\Debug\net6.0\DemoOrderApp.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\obj\Debug\net6.0\DemoOrderApp.RazorAssemblyInfo.cache
+C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\obj\Debug\net6.0\DemoOrderApp.RazorAssemblyInfo.cs
 C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\bin\Debug\net6.0\appsettings.json
 C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\bin\Debug\net6.0\DemoOrderApp.staticwebassets.runtime.json
@@ -269,14 +277,6 @@ C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\bin\Debug\net6.0\Rep
 C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\bin\Debug\net6.0\Bussiness.pdb
 C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\bin\Debug\net6.0\Domain.pdb
 C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\bin\Debug\net6.0\Repository.pdb
-C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\obj\Debug\net6.0\DemoOrderApp.csproj.AssemblyReference.cache
-C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\obj\Debug\net6.0\DemoOrderApp.GeneratedMSBuildEditorConfig.editorconfig
-C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\obj\Debug\net6.0\DemoOrderApp.AssemblyInfoInputs.cache
-C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\obj\Debug\net6.0\DemoOrderApp.AssemblyInfo.cs
-C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\obj\Debug\net6.0\DemoOrderApp.csproj.CoreCompileInputs.cache
-C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\obj\Debug\net6.0\DemoOrderApp.MvcApplicationPartsAssemblyInfo.cache
-C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\obj\Debug\net6.0\DemoOrderApp.RazorAssemblyInfo.cache
-C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\obj\Debug\net6.0\DemoOrderApp.RazorAssemblyInfo.cs
 C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\obj\Debug\net6.0\staticwebassets.build.json
 C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\obj\Debug\net6.0\staticwebassets.development.json
 C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp\obj\Debug\net6.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css

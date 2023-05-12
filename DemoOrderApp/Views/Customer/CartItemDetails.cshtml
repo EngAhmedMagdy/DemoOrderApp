@@ -1,0 +1,38 @@
+﻿@model Domain.Entites.CartItem
+
+<div class="col-sm-4 col-lg-4 col-md-4">
+    <div class="panel panel-primary">
+        <div class="panel-heading">
+            <h4 hidden>
+                @Model.Id"
+            </h4>
+            <h4 hidden>@Model.Item.Name</h4>
+        </div>
+        <div class="panel-body">
+            <dl class="row">
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Item.Price)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Item.Price)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Item.Description)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Item.Description)
+                </dd>
+                <dt class="col-sm-2">
+                    @Html.DisplayNameFor(model => model.Item.Quantity)
+                </dt>
+                <dd class="col-sm-10">
+                    @Html.DisplayFor(model => model.Item.Quantity)
+                </dd>
+            </dl>
+        </div>
+         <div>
+            <a class="btn btn-info" asp-action="CartItemEdit" asp-route-id="@Model.Id">Edit</a>
+            <a class="btn btn-danger" asp-area="" asp-action="CartItemDelete" asp-route-id="@Model.Id">Delete</a>
+        </div>
+    </div>
+</div>

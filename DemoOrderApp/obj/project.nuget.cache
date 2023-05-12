@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "DWls+ruOHTcBaNqtanVDCo2dLrpMCoXE3IHcCj5XpNiKyr6VdkfqA8x9D9qEG7SXc2BkRrogxCcNXMQC1frsOA==",
+  "dgSpecHash": "JHpRIuO+iH6Qxdy0iZC8KJ+KZUMQPupGAl8jGHUnWcOT7wy2Rktji/Q7Cf5pYYsI4zQwBZJpXLoyDQAbRShbLA==",
   "success": true,
   "projectFilePath": "C:\\Users\\ahmed magdy\\source\\repos\\DemoOrderApp\\DemoOrderApp\\DemoOrderApp.csproj",
   "expectedPackageFiles": [
@@ -10,6 +10,8 @@
     "C:\\Users\\ahmed magdy\\.nuget\\packages\\messagepack\\2.1.152\\messagepack.2.1.152.nupkg.sha512",
     "C:\\Users\\ahmed magdy\\.nuget\\packages\\messagepack.annotations\\2.1.152\\messagepack.annotations.2.1.152.nupkg.sha512",
     "C:\\Users\\ahmed magdy\\.nuget\\packages\\messagepackanalyzer\\2.1.152\\messagepackanalyzer.2.1.152.nupkg.sha512",
+    "C:\\Users\\ahmed magdy\\.nuget\\packages\\microsoft.aspnetcore.http.abstractions\\2.2.0\\microsoft.aspnetcore.http.abstractions.2.2.0.nupkg.sha512",
+    "C:\\Users\\ahmed magdy\\.nuget\\packages\\microsoft.aspnetcore.http.features\\2.2.0\\microsoft.aspnetcore.http.features.2.2.0.nupkg.sha512",
     "C:\\Users\\ahmed magdy\\.nuget\\packages\\microsoft.aspnetcore.razor.language\\6.0.0\\microsoft.aspnetcore.razor.language.6.0.0.nupkg.sha512",
     "C:\\Users\\ahmed magdy\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\5.0.0\\microsoft.bcl.asyncinterfaces.5.0.0.nupkg.sha512",
     "C:\\Users\\ahmed magdy\\.nuget\\packages\\microsoft.build\\17.3.2\\microsoft.build.17.3.2.nupkg.sha512",

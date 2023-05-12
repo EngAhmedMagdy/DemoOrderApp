@@ -1,0 +1,15 @@
+﻿@model IEnumerable<Domain.Entites.Item>
+
+@{
+    ViewData["Title"] = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<p>
+    <a class="btn btn-success mt-5" asp-action="Create">Create Product</a>
+</p>
+
+@foreach (var item in Model) {
+       @Html.Partial("Details.cshtml",item);
+}
+

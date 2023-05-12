@@ -1,0 +1,53 @@
+﻿@model List<Domain.Entites.CartItem>
+
+@{
+    ViewData["Title"] = "UserCart";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>UserCart</h1>
+
+
+
+<form method="post" asp-controller="Order" asp-action="Add">
+    @for (int i = 0; i < Model.Count; i++)
+    {
+        <div class="col-sm-4 col-lg-4 col-md-4">
+            <div class="panel panel-primary">
+                <div class="panel-heading">
+                    <input type="hidden" name="[@i].Id" value="@Model[i].Id" />
+                    <input type="hidden" name="[@i].Item.Name" value="@Model[i].Item.Name" />
+                    <input type="hidden" name="[@i].Item.Price" value="@Model[i].Item.Price" />                    
+                    <h4>@Model[i].Item.Name</h4>
+                </div>
+                <div class="panel-body">
+                    <dl class="row">
+                        <dt class="col-sm-2">
+                            <h4>name</h4>
+                        </dt>
+                        <dd class="col-sm-10">
+                            <h4>@Model[i].Item.Name</h4>
+                        </dd>
+                        <dt class="col-sm-2">
+                            <h4>price</h4>
+                        </dt>
+                        <dd class="col-sm-10">
+                            <h4>@Model[i].Item.Price</h4>
+                        </dd>
+                        
+                    </dl>
+                </div>
+                <div>
+                    <a class="btn btn-info" asp-action="CartItemEdit" asp-route-id="@Model[i].Id">Edit</a>
+                    <a class="btn btn-danger" asp-area="" asp-action="CartItemDelete" asp-route-id="@Model[i].Id">Delete</a>
+                </div>
+            </div>
+        </div>
+        
+
+    }
+    <button type="submit">Submit</button>
+</form>
+
+
+

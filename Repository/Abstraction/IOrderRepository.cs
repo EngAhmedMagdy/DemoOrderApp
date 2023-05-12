@@ -10,7 +10,7 @@ namespace Repository.Abstraction
 {
     public interface IOrderRepository
     {
-        public List<Order> GetListOfOrders();
+        public List<Order> GetListOfOrders(int id);
         public Order GetOrderById(int id);
         public void DeleteOrderById(int id);
         public void Add(Order order);

@@ -11,8 +11,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Domain.Migrations
 {
     [DbContext(typeof(Context))]
-    [Migration("20230413202258_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20230427003547_newCreate")]
+    partial class newCreate
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -23,6 +23,29 @@ namespace Domain.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128);
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
+
+            modelBuilder.Entity("Domain.Entites.Cart", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CustomerId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("ItemId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CustomerId");
+
+                    b.HasIndex("ItemId");
+
+                    b.ToTable("Cart");
+                });
 
             modelBuilder.Entity("Domain.Entites.Customer", b =>
                 {
@@ -69,9 +92,6 @@ namespace Domain.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("OrderId")
-                        .HasColumnType("int");
-
                     b.Property<int>("Price")
                         .HasColumnType("int");
 
@@ -79,9 +99,6 @@ namespace Domain.Migrations
                         .HasColumnType("int");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("OrderId")
-                        .IsUnique();
 
                     b.ToTable("Items");
                 });
@@ -94,14 +111,14 @@ namespace Domain.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
+                    b.Property<int>("CartId")
+                        .HasColumnType("int");
+
                     b.Property<string>("Category")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<int>("Cost")
-                        .HasColumnType("int");
-
-                    b.Property<int>("CustomerId")
                         .HasColumnType("int");
 
                     b.Property<string>("Date")
@@ -114,27 +131,17 @@ namespace Domain.Migrations
 
                     b.Property<string>("Name")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(10)
+                        .HasColumnType("nvarchar(10)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CustomerId");
+                    b.HasIndex("CartId");
 
                     b.ToTable("Orders");
                 });
 
-            modelBuilder.Entity("Domain.Entites.Item", b =>
-                {
-                    b.HasOne("Domain.Entites.Order", "Order")
-                        .WithOne("Item")
-                        .HasForeignKey("Domain.Entites.Item", "OrderId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Order");
-                });
-
-            modelBuilder.Entity("Domain.Entites.Order", b =>
+            modelBuilder.Entity("Domain.Entites.Cart", b =>
                 {
                     b.HasOne("Domain.Entites.Customer", "Customer")
                         .WithMany()
@@ -142,13 +149,26 @@ namespace Domain.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Domain.Entites.Item", "Item")
+                        .WithMany()
+                        .HasForeignKey("ItemId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Customer");
+
+                    b.Navigation("Item");
                 });
 
             modelBuilder.Entity("Domain.Entites.Order", b =>
                 {
-                    b.Navigation("Item")
+                    b.HasOne("Domain.Entites.Cart", "Cart")
+                        .WithMany()
+                        .HasForeignKey("CartId")
+                        .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Cart");
                 });
 #pragma warning restore 612, 618
         }

@@ -1,6 +1,8 @@
 ﻿using Bussiness.Abstraction;
+using Bussiness.Implementation;
 using Domain.Entites;
 using Microsoft.AspNetCore.Mvc;
+using Newtonsoft.Json;
 
 namespace DemoOrderApp.Controllers
 {
@@ -15,33 +17,32 @@ namespace DemoOrderApp.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            var list = orderService.GetOrders();
+            var c = HttpContext.Session.GetString("User");
+            var d = JsonConvert.DeserializeObject<Customer>(c);
+            var list = orderService.GetListOfOrders(d.Id);
             return View(list);
         }
-        [HttpGet]
-        [Route("App/Order/Add")]
-        public IActionResult Add()
-        {
-            return View();
-        }
+        
         [HttpPost]
         [Route("App/Order/Add")]
-        public IActionResult Add(Order order)
+        public IActionResult Add(List<CartItem> items)
         {
-            orderService.AddPriceToTotal(order);
+            var c = HttpContext.Session.GetString("User");
+            var d = JsonConvert.DeserializeObject<Customer>(c);
+            orderService.Add(items,d.Id);
             return RedirectToAction("Index");
         }
         [HttpGet]
         [Route("App/Order/Edit/{id}")]
         public IActionResult Edit(int id)
         {
-            return View(orderService.GetOrder(id));
+            return View(orderService.GetOrderById(id));
         }
         [HttpPost]
         [Route("App/Order/Edit/{id}")]
         public IActionResult Edit(Order order)
         {
-            orderService.AddPriceToTotal(order);
+            orderService.Edit(order);
             return RedirectToAction("Index");
         }
     }

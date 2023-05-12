@@ -15,6 +15,42 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\ahmed magdy\source\repos\DemoOrderApp\DemoOrderApp
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/ahmed magdy/source/repos/DemoOrderApp/DemoOrderApp/Views/Cart/AddItemToCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxBZGRJdGVtVG9DYXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmed magdy/source/repos/DemoOrderApp/DemoOrderApp/Views/Cart/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ2FydFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmed magdy/source/repos/DemoOrderApp/DemoOrderApp/Views/Customer/CartItemDetails.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ2FydEl0ZW1EZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmed magdy/source/repos/DemoOrderApp/DemoOrderApp/Views/Customer/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcQ3JlYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmed magdy/source/repos/DemoOrderApp/DemoOrderApp/Views/Customer/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcRGV0YWlscy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmed magdy/source/repos/DemoOrderApp/DemoOrderApp/Views/Customer/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmed magdy/source/repos/DemoOrderApp/DemoOrderApp/Views/Customer/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcTG9naW4uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmed magdy/source/repos/DemoOrderApp/DemoOrderApp/Views/Customer/UserCart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcVXNlckNhcnQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmed magdy/source/repos/DemoOrderApp/DemoOrderApp/Views/Customer/View.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ3VzdG9tZXJcVmlldy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/ahmed magdy/source/repos/DemoOrderApp/DemoOrderApp/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -25,6 +61,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/ahmed magdy/source/repos/DemoOrderApp/DemoOrderApp/Views/Home/View.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxWaWV3LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmed magdy/source/repos/DemoOrderApp/DemoOrderApp/Views/Item/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmed magdy/source/repos/DemoOrderApp/DemoOrderApp/Views/Item/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/ahmed magdy/source/repos/DemoOrderApp/DemoOrderApp/Views/Item/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSXRlbVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/ahmed magdy/source/repos/DemoOrderApp/DemoOrderApp/Views/Order/Add.cshtml]
